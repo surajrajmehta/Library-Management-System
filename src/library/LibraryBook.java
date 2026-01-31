@@ -25,7 +25,7 @@ public class LibraryBook extends BookItem implements Issueable {
         return issuedTo;
     }
 
-    @Override
+    
     public void issueBook(String studentName) {
         try {
             if (!isAvailable) {
@@ -63,14 +63,14 @@ public class LibraryBook extends BookItem implements Issueable {
         }
     }
 
-    @Override
+    
     public void returnBook() {
         isAvailable = true;
         issuedTo = "None";
         System.out.println("Book returned successfully.");
     }
 
-    @Override
+    
     public void displayBookDetails() {
         System.out.println("Title: " + title);
         System.out.println("Book ID: " + bookId);
@@ -81,7 +81,7 @@ public class LibraryBook extends BookItem implements Issueable {
         System.out.println("--------------------------");
     }
 
-    @Override
+    
     public String toString() {
         return "LibraryBook {" +
                 "Title='" + title + '\'' +
